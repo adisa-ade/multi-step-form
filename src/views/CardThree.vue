@@ -6,8 +6,8 @@ const useAddsOn = useStore()
 const open = ref(false)
 </script>
 <template>  
-<card-container class="bg-red-400">
-  <template #header>  
+<card-container>
+<template #header>  
     <div>
 <h1 class="text-3xl text-marineblue
  font-bold">Pick add-ons</h1>
@@ -17,7 +17,7 @@ text-coolgray">Adds-on help enhance
 </div>
 </template>
 <template #content>
-<div class="flex flex-col space-y-4">
+<div class="flex flex-col space-y-4 card">
     <div class="flex justify-between items-center border-2 rounded-lg p-4" v-for="(adds, index)
      in useAddsOn.addsOn" :key="index">            
        <input type="checkbox">
@@ -31,3 +31,10 @@ text-coolgray">Adds-on help enhance
 </template>
 </card-container>
 </template>
+<style scoped>
+@media screen and (min-width: 1024px){
+  .card{
+  width: 550px;
+} 
+}
+</style>

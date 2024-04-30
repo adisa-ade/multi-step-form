@@ -11,7 +11,7 @@ import { ref } from 'vue';
 let step = ref(1)
 </script>
 <template>
-  <main class="md:flex md:justify-around md:items-center md:mx-auto md:mt-28 md:rounded-xl md:py-8 md:bg-white lg:w-3/4">
+  <main class="md:flex md:justify-around md:items-center md:mx-auto md:my-16 md:rounded-xl md:py-8 md:bg-white lg:w-3/4">
     <Nav :step="step"/>
     <div>      
     <CardOne v-if="step === 1"/>        

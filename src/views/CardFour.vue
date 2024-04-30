@@ -13,7 +13,7 @@ text-coolgray">Double-check everything looks OK before confirming.</p>
 </div>
 </template>
 <template #content>
-<div class="flex flex-col space-y-4 bg-alabaster rounded-lg">
+<div class="flex flex-col space-y-4 bg-alabaster rounded-lg card">
     <div class="flex justify-between items-center rounded-lg p-4 border-b-2">            
         <div>
         <h2 class="text-lg text-marineblue font-bold">Arcade (Monthly)</h2>
@@ -43,3 +43,10 @@ text-coolgray">Double-check everything looks OK before confirming.</p>
 </template>
 </card-container>
 </template>
+<style scoped>
+@media screen and (min-width: 1024px){
+  .card{
+  width: 550px;
+} 
+}
+</style>
